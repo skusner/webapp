@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: Arial,sans-serif;
+    font-size: 100%;
+}
+
 body
 {
     width:100%;
@@ -13,22 +18,28 @@ header{
     height: 60px;
 }
 
-.layout-wrap{
+.layout-wrap {
     max-width: 960px;
+    width: 100%;
     margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
 }
 
-.layout-wrap a {
+header a {
     float: left;
     margin-top: 13px;
 }
 
-.layout-wrap .search-box {
+header .search-box {
     float: right;
     margin-top: 18px;
 }
 
-.page-body {
+.page-body  {
     margin: 0 auto;
     background-color: rgba(131, 131, 131, 0.6);
 }
+
