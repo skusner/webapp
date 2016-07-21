@@ -207,12 +207,24 @@ nav{
 }
 
 
-#quick-reports{
+#quick-reports:target,
+#fmy-folders:target,
+#my-team-folders:target,
+#public-folders:target
+{
     width: 96%;
     background:#ebebeb; 
     height: 100%;
     position: absolute;
     display: flex;
+}
+
+#quick-reports:not(:target),
+#fmy-folders:not(:target),
+#my-team-folders:not(:target),
+#public-folders:not(:target)
+{
+    opacity:0;
 }
 
 
